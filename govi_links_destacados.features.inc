@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ * govi_links_destacados.features.inc
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function govi_links_destacados_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function govi_links_destacados_node_info() {
+  $items = array(
+    'enlace_destacado' => array(
+      'name' => t('Enlace destacado'),
+      'base' => 'node_content',
+      'description' => t('Utilice este tipo de contenido para crear enlaces hacia un contenido destacado. El diseño es un boton especial con imágen asociada al tema'),
+      'has_title' => '1',
+      'title_label' => t('Enlace destacado'),
+      'help' => '',
+    ),
+  );
+  drupal_alter('node_info', $items);
+  return $items;
+}
