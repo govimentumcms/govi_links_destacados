@@ -10,7 +10,7 @@
 function govi_links_destacados_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-enlace_destacado-field_clasificaci_n'
+  // Exported field_instance: 'node-enlace_destacado-field_clasificaci_n'.
   $field_instances['node-enlace_destacado-field_clasificaci_n'] = array(
     'bundle' => 'enlace_destacado',
     'default_value' => NULL,
@@ -46,7 +46,8 @@ function govi_links_destacados_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-enlace_destacado-field_featured_link_imagen'
+  // Exported field_instance:
+  // 'node-enlace_destacado-field_featured_link_imagen'.
   $field_instances['node-enlace_destacado-field_featured_link_imagen'] = array(
     'bundle' => 'enlace_destacado',
     'deleted' => 0,
@@ -96,7 +97,7 @@ function govi_links_destacados_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-enlace_destacado-field_featured_referencia'
+  // Exported field_instance: 'node-enlace_destacado-field_featured_referencia'.
   $field_instances['node-enlace_destacado-field_featured_referencia'] = array(
     'bundle' => 'enlace_destacado',
     'default_value' => NULL,

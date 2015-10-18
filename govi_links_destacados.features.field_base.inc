@@ -10,7 +10,7 @@
 function govi_links_destacados_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_clasificaci_n'
+  // Exported field_base: 'field_clasificaci_n'.
   $field_bases['field_clasificaci_n'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -36,7 +36,7 @@ function govi_links_destacados_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_featured_link_imagen'
+  // Exported field_base: 'field_featured_link_imagen'.
   $field_bases['field_featured_link_imagen'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -58,7 +58,7 @@ function govi_links_destacados_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_featured_referencia'
+  // Exported field_base: 'field_featured_referencia'.
   $field_bases['field_featured_referencia'] = array(
     'active' => 1,
     'cardinality' => 1,
