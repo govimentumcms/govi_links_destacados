@@ -10,30 +10,33 @@
 function govi_links_destacados_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_clasificaci_n'.
-  $field_bases['field_clasificaci_n'] = array(
+  // Exported field_base: 'field_enlace_destacado'.
+  $field_bases['field_enlace_destacado'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_clasificaci_n',
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
+    'field_name' => 'field_enlace_destacado',
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'link',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'noticias',
-          'parent' => 0,
-        ),
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
       ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_featured_link_imagen'.
@@ -58,39 +61,46 @@ function govi_links_destacados_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_featured_referencia'.
-  $field_bases['field_featured_referencia'] = array(
+  // Exported field_base: 'field_titulo_parte_1'.
+  $field_bases['field_titulo_parte_1'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_featured_referencia',
+    'field_name' => 'field_titulo_parte_1',
     'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'entityreference',
+    'module' => 'text',
     'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'noticia' => 'noticia',
-        ),
-      ),
-      'target_type' => 'node',
+      'max_length' => 40,
     ),
     'translatable' => 0,
-    'type' => 'entityreference',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_titulo_parte_2'.
+  $field_bases['field_titulo_parte_2'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_titulo_parte_2',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 40,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   return $field_bases;
