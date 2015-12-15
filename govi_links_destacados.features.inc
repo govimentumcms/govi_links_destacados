@@ -12,6 +12,30 @@ function govi_links_destacados_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function govi_links_destacados_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: enlaces_destacados.
+  $styles['enlaces_destacados'] = array(
+    'label' => 'Enlaces destacados',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 309,
+          'height' => 70,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function govi_links_destacados_node_info() {

@@ -108,6 +108,19 @@ function govi_links_destacados_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['enlaces_destacados'] = array(
+    t('Master'),
+    t('Enlaces destacados'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('File'),
+    t('[field_enlace_destacado-url]'),
+    t('Block'),
+  );
   $export['enlaces_destacados'] = $view;
 
   return $export;

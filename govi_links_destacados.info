@@ -24,6 +24,7 @@ features[field_instance][] = node-enlace_destacado-field_enlace_destacado
 features[field_instance][] = node-enlace_destacado-field_featured_link_imagen
 features[field_instance][] = node-enlace_destacado-field_titulo_parte_1
 features[field_instance][] = node-enlace_destacado-field_titulo_parte_2
+features[image][] = enlaces_destacados
 features[node][] = enlace_destacado
 features[views_view][] = enlaces_destacados
 features_exclude[dependencies][govi_noticias] = govi_noticias
