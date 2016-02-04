@@ -1,7 +1,7 @@
 name = Govi Links Destacados
 description = Implementa Destacados de la Distribución
 core = 7.x
-package = Features
+package = Govimentum
 version = 7.x-1.0-beta1
 project = govi_links_destacados
 dependencies[] = ctools
