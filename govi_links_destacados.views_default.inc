@@ -234,7 +234,14 @@ function govi_links_destacados_views_default_views() {
   $handler->display->display_options['fields']['field_enlace_color']['table'] = 'field_data_field_enlace_color';
   $handler->display->display_options['fields']['field_enlace_color']['field'] = 'field_enlace_color';
   $handler->display->display_options['fields']['field_enlace_color']['label'] = '';
+  $handler->display->display_options['fields']['field_enlace_color']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_enlace_color']['element_type'] = '0';
   $handler->display->display_options['fields']['field_enlace_color']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enlace_color']['settings'] = array(
+    'selector' => 'body',
+    'property' => 'background-color',
+    'important' => 1,
+  );
   /* Field: Content: Tipo de enlace */
   $handler->display->display_options['fields']['field_enlace_tipo']['id'] = 'field_enlace_tipo';
   $handler->display->display_options['fields']['field_enlace_tipo']['table'] = 'field_data_field_enlace_tipo';
