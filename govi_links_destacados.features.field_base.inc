@@ -10,6 +10,28 @@
 function govi_links_destacados_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_enlace_color'.
+  $field_bases['field_enlace_color'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_enlace_color',
+    'indexes' => array(
+      'rgb' => array(
+        0 => 'rgb',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'color_field',
+    'settings' => array(
+      'default_colors' => '#0080ff,#a300d9,#ffbf00,#008c69,#8c6900,#ff4000,#9999ff
+        ',
+    ),
+    'translatable' => 0,
+    'type' => 'color_field_rgb',
+  );
+
   // Exported field_base: 'field_enlace_destacado'.
   $field_bases['field_enlace_destacado'] = array(
     'active' => 1,
@@ -37,6 +59,31 @@ function govi_links_destacados_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_enlace_tipo'.
+  $field_bases['field_enlace_tipo'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_enlace_tipo',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'enlace_primario' => 'Primario',
+        'enlace_secundario' => 'Secundario',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_featured_link_imagen'.

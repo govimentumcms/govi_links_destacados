@@ -45,7 +45,7 @@ function govi_links_destacados_node_info() {
       'base' => 'node_content',
       'description' => t('Utilice este tipo de contenido para crear enlaces hacia un contenido destacado. El diseño es un boton especial con imágen asociada al tema'),
       'has_title' => '1',
-      'title_label' => t('Enlace destacado'),
+      'title_label' => t('Titulo'),
       'help' => '',
     ),
   );

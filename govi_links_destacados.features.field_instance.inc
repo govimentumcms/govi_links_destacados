@@ -10,6 +10,47 @@
 function govi_links_destacados_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-enlace_destacado-field_enlace_color'.
+  $field_instances['node-enlace_destacado-field_enlace_color'] = array(
+    'bundle' => 'enlace_destacado',
+    'default_value' => array(
+      0 => array(
+        'rgb' => '#a300d9',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'color_field',
+        'settings' => array(),
+        'type' => 'color_field_default_formatter',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_enlace_color',
+    'label' => 'Color del enlace',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'color_field',
+      'settings' => array(),
+      'type' => 'color_field_default_widget',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-enlace_destacado-field_enlace_destacado'.
   $field_instances['node-enlace_destacado-field_enlace_destacado'] = array(
     'bundle' => 'enlace_destacado',
@@ -40,14 +81,14 @@ function govi_links_destacados_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_enlace_destacado',
-    'label' => 'Enlace destacado',
+    'label' => 'URL',
     'required' => 1,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
-        'configurable_class' => 1,
-        'configurable_title' => 1,
+        'configurable_class' => 0,
+        'configurable_title' => 0,
         'rel' => '',
         'target' => 'user',
         'title' => '',
@@ -71,6 +112,47 @@ function govi_links_destacados_field_default_field_instances() {
       'settings' => array(),
       'type' => 'link_field',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-enlace_destacado-field_enlace_tipo'.
+  $field_instances['node-enlace_destacado-field_enlace_tipo'] = array(
+    'bundle' => 'enlace_destacado',
+    'default_value' => array(
+      0 => array(
+        'value' => 'enlace_primario',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Seleccione el tipo de enlace que desea gestionar',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_enlace_tipo',
+    'label' => 'Tipo de enlace',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
     ),
   );
 
@@ -131,7 +213,7 @@ function govi_links_destacados_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => -2,
+      'weight' => 3,
     ),
   );
 
@@ -178,7 +260,7 @@ function govi_links_destacados_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -1,
+      'weight' => 4,
     ),
   );
 
@@ -225,16 +307,19 @@ function govi_links_destacados_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 5,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Enlace destacado');
+  t('Color del enlace');
   t('Imagen');
+  t('Seleccione el tipo de enlace que desea gestionar');
+  t('Tipo de enlace');
   t('Título parte 1');
   t('Título parte 2');
+  t('URL');
   t('Utilice este campo para incluir una imágen relacionada con el contenido que será destacado');
   t('ingrese la <em>primera</em> parte del título que heredará propiedades de estilo específicas para ajustar la fuente del texto según el diseño del enlace destacado');
   t('ingrese la <em>segunda</em> parte del título que heredará propiedades de estilo específicas para ajustar la fuente del texto según el diseño del enlace destacado');
