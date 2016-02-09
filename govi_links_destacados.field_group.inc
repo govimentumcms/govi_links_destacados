@@ -23,11 +23,11 @@ function govi_links_destacados_field_group_info() {
     'label' => 'Presentación del enlace',
     'weight' => '2',
     'children' => array(
-      0 => 'field_featured_link_imagen',
-      1 => 'field_titulo_parte_1',
-      2 => 'field_titulo_parte_2',
-      3 => 'field_enlace_tipo',
-      4 => 'field_enlace_color',
+      0 => 'field_enlace_color',
+      1 => 'field_enlace_tipo',
+      2 => 'field_featured_link_imagen',
+      3 => 'field_titulo_parte_1',
+      4 => 'field_titulo_parte_2',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

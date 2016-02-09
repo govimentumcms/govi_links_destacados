@@ -257,7 +257,9 @@ function govi_links_destacados_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'maxlength_js' => 1,
+        'maxlength_js_label' => 'Que quedan <strong>@remaining</strong> de @limit caracteres.',
+        'size' => 29,
       ),
       'type' => 'text_textfield',
       'weight' => 4,
@@ -304,7 +306,9 @@ function govi_links_destacados_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'maxlength_js' => 1,
+        'maxlength_js_label' => 'Que quedan <strong>@remaining</strong> de @limit caracteres.',
+        'size' => 24,
       ),
       'type' => 'text_textfield',
       'weight' => 5,

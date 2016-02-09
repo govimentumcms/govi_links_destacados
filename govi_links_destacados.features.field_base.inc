@@ -123,7 +123,7 @@ function govi_links_destacados_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 40,
+      'max_length' => 29,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -144,7 +144,7 @@ function govi_links_destacados_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 40,
+      'max_length' => 24,
     ),
     'translatable' => 0,
     'type' => 'text',

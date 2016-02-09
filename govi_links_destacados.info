@@ -14,6 +14,7 @@ dependencies[] = field_group
 dependencies[] = image
 dependencies[] = link
 dependencies[] = list
+dependencies[] = maxlength
 dependencies[] = options
 dependencies[] = text
 dependencies[] = token
